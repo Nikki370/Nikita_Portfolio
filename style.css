@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 247, 247);
+}
+
+.main-container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    margin: auto;
+    padding: 45px;
+}
+
+.sidebar {
+    height: 90vh;
+    background-color: rgb(45, 44, 44);
+    border-radius: 12px;
+    border: 1px solid rgb(66, 75, 79);
+    box-shadow: 0px 0px 4px 1px rgb(122, 122, 122);
+    padding: 20px;
+    position: sticky;
+    top: 45px;
+}
+
+.main {
+    height: auto;
+    background-color: rgb(45, 44, 44);
+    border-radius: 12px;
+    border: 1px solid rgb(66, 75, 79);
+    box-shadow: 0px 0px 4px 1px rgb(122, 122, 122);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 0px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    object-fit: cover;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0px 0px 4px 1px rgb(142, 142, 142);
+
+}
+
+.profile h2 {
+    font-size: 1.5rem;
+}
+
+.profile p {
+    padding: 10px;
+    background-color: rgb(28, 28, 28);
+    color: #FFD700;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #181818;
+}
+
+.contact {
+    margin-top: 8px;
+    border-top: 1px solid #3a3a3a;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 6px;
+}
+
+.contact div {
+    padding-top: 12px;
+}
+
+.label {
+    font-size: 1rem;
+    color: rgb(191, 190, 189);
+}
+
+.contact div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.link {
+    margin-top: 8px;
+    border-top: 1px solid #3a3a3a;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link div a{
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.link div a:hover {
+    color: black;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 18px 20px 22px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 12px;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav ul li a:hover {
+    color: #FFD700;
+}
+
+.nav ul li a.active {
+  color: #FFD700;
+}
+
+
+.about {
+    border-top: 1px solid #3a3a3a;
+}
+
+.main {
+    padding: 10px;
+}
+
+.about, .skills, .education, .project {
+    padding: 18px 10px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.underDiv {
+    height: 5px;
+    width: 40px;
+    background-color: #FEBE10;
+    border-radius: 16px;
+    margin: 12px 0px;
+}
+
+.skills {
+    padding-top: 10px;
+}
+
+.skillNameBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 26px 8px;
+    background-color: #181818;
+    border-radius: 5px;
+    border: 1px solid #3a3a3a;
+    transition: transform 250ms ease-out;
+}
+
+.skillNameBox:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 4px 1px rgb(1, 1, 1);
+    border: 1px solid rgb(106, 106, 106);
+}
+
+.skillNameBox p {
+    font-size: 10px;
+    color: #cdcbcb;
+}
+
+.skill-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    font-size: 50px;
+    color: #ffc21b;
+}
+
+.subskills {
+    padding-top: 18px;
+}
+
+.subskills ul {
+    list-style: none;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    padding-top: 15px;
+}
+
+.subskills ul li {
+    padding: 8px 20px;
+    background-color: #181818;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #dcdada;
+}
+
+.edu-detail {
+    margin-top: 15px;
+    padding: 5px 15px;
+    border-left: 1px solid #616161;
+    position: relative;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #FEBE10;  /* thickness + color */
+    border-radius: 50%;          /* circle banane ke liye */
+    background: #3a3a3a;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+
+.info p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.info h4 {
+    margin: 8px 0px;
+    color: rgb(216, 216, 216);
+}
+
+.card-container {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card img {
+    width: 200px;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card {
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.card div {
+    padding: 12px;
+}
