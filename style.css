@@ -257,12 +257,12 @@ body {
 }
 
 .card-container {
-    padding: 10px 0px;
+    padding: 12px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .card img {
@@ -295,4 +295,16 @@ body {
     background-color: rgb(16, 16, 16);
     border-radius: 6px;
     font-weight: bold;
+}
+
+.card {
+    border: 1px solid #3a3a3a;
+    transition: transform 250ms ease-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 4px 1px rgb(1, 1, 1);
+    border: 1px solid rgb(106, 106, 106);
+    cursor: pointer;
 }
