@@ -259,10 +259,10 @@ body {
 .card-container {
     padding: 10px 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-
+    gap: 12px;
 }
 
 .card img {
@@ -280,4 +280,19 @@ body {
 
 .card div {
     padding: 12px;
+}
+
+.project-info {
+    font-size: 12px;
+    color: #6e6e6e;
+    margin: 8px 0px;
+}
+
+.card div span {
+    font-size: 10px;
+    padding: 4px 10px;
+    color: #FEBE10;
+    background-color: rgb(16, 16, 16);
+    border-radius: 6px;
+    font-weight: bold;
 }
