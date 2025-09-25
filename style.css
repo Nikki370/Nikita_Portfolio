@@ -266,7 +266,7 @@ body {
 }
 
 .card img {
-    width: 200px;
+    width: 260px;
     box-sizing: border-box;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -289,7 +289,7 @@ body {
 }
 
 .card div span {
-    font-size: 10px;
+    font-size: 0.75rem;
     padding: 4px 10px;
     color: #FEBE10;
     background-color: rgb(16, 16, 16);
