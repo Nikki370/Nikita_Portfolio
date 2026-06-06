@@ -103,6 +103,26 @@ body {
     gap: 20px;
 }
 
+.resume-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.resume-btn {
+    text-decoration: none;
+    background: #FFD700;
+    color: #1f1f1f;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    border: 1px solid #b88700;
+}
+
+.resume-btn:hover {
+    background: #ffcf40;
+}
+
 .link div a{
     font-size: 20px;
     cursor: pointer;
@@ -122,6 +142,7 @@ body {
 .nav ul li {
     list-style: none;
     padding: 18px 20px 22px;
+        font-weight: bold;
 }
 
 .nav ul {
@@ -266,7 +287,7 @@ body {
 }
 
 .card img {
-    width: 260px;
+    width: 320px;
     box-sizing: border-box;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -277,6 +298,7 @@ body {
 .card {
     background-color: #181818;
     border-radius: 10px;
+    width: 320px;
 }
 
 .card div {
@@ -396,4 +418,83 @@ body {
         font-size: 14px;
     }
 }
-// ...existing code...
+
+
+/*get in touch*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px 0 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: #181818;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: rgb(248, 247, 247);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    transition: border 200ms ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #FEBE10;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    background: #FFD700;
+    color: #1f1f1f;
+    padding: 10px 28px;
+    border: 1px solid #b88700;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 200ms ease;
+}
+
+.submit-btn:hover {
+    background: #ffcf40;
+}
+
+@media (max-width: 600px) {
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+.page-footer {
+    text-align: center;
+    padding: 18px 0;
+    color: #dcdada;
+    font-size: 0.95rem;
+    border-top: 1px solid #3a3a3a;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.page-footer .heart {
+    color: #ff5f71;
+}
